@@ -128,9 +128,7 @@ small { font-size: var(--step--1); color: var(--muted); }
 /* Header ------------------------------------------------------------------ */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(245, 241, 234, 0.85);
-  backdrop-filter: saturate(140%) blur(10px);
-  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  background: rgba(245, 241, 234, 0.97);
   border-bottom: 1px solid var(--rule);
 }
 .site-header__inner {
