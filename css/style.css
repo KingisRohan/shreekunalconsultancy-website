@@ -600,6 +600,7 @@ small { font-size: var(--step--1); color: var(--muted); }
   border-radius: var(--radius-sm);
   padding: 0.85rem 1rem;
   font: inherit;
+  font-size: max(1rem, 16px); /* prevents iOS Safari from auto-zooming the page on focus */
   color: var(--ink);
   transition: border-color var(--dur-fast) var(--ease);
   width: 100%;
@@ -664,7 +665,7 @@ small { font-size: var(--step--1); color: var(--muted); }
   margin: 0;
   line-height: 1.7;
 }
-.footer__col h5 {
+.footer__col h3 {
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--muted);
@@ -828,5 +829,14 @@ small { font-size: var(--step--1); color: var(--muted); }
   .compass-wrap { width: 160px; height: 160px; top: 1rem; right: 1rem; }
 }
 
-/* Mobile nav open body lock */
-body.nav-open { overflow: hidden; }
+/* Mobile nav open body lock — position:fixed is required in addition to
+   overflow:hidden because iOS Safari ignores overflow:hidden alone and lets
+   the page scroll behind a fixed-position overlay. JS sets `top` to the
+   negative scroll offset before adding this class, then restores scroll
+   position when it's removed. */
+body.nav-open {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
