@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Shree Kunal Dhurve — Vastu Shastra Consultant
+   Shree Kunal Dhurve, Vastu Shastra Consultant
    Design system + component styles
    ========================================================================== */
 
@@ -85,7 +85,7 @@ h1 em, h2 em { font-style: italic; color: var(--clay); }
 .section--dark .lede { color: var(--stone-light); }
 p { margin: 0 0 var(--space-2); }
 
-/* Mono label — eyebrows, nav, buttons, small caps (never above 13px) ------- */
+/* Mono label: eyebrows, nav, buttons, small caps (never above 13px) -------- */
 .eyebrow, .mono {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.72rem;
@@ -209,7 +209,7 @@ p { margin: 0 0 var(--space-2); }
 .hero__inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
 .hero h1 { margin-bottom: var(--space-3); }
 .hero__ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: var(--space-4); }
-.hero__image { aspect-ratio: 4 / 5; }
+.hero__image { aspect-ratio: 6 / 5; border: 1px solid var(--line); overflow: hidden; }
 .hero__caption {
   margin-top: var(--space-2);
   font-family: "IBM Plex Mono", ui-monospace, monospace;
@@ -368,6 +368,14 @@ p { margin: 0 0 var(--space-2); }
 .form__status--err { display: block; color: #8B1A1A; border-color: #8B1A1A; }
 
 .map { width: 100%; aspect-ratio: 16 / 8; border: 1px solid var(--line); overflow: hidden; background: var(--paper-raised); }
+
+.services-banner {
+  aspect-ratio: 5 / 4;
+  max-width: 900px;
+  margin-inline: auto;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
 
 /* Footer ----------------------------------------------------------------------*/
 .site-footer { border-top: 1px solid var(--line); padding-block: var(--space-4); }
