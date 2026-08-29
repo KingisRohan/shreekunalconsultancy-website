@@ -30,12 +30,14 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": "https://shreekunalconsultancy.com/#business",
     "name": "Shree Kunal Dhurve",
     "alternateName": "Kunal Dhurve Vastu Consultant",
     "description": "Vastu Shastra consultant providing residential, commercial, and remote consultations across Mumbai and India.",
     "url": "https://shreekunalconsultancy.com/",
     "telephone": "+91-7777008369",
-    "priceRange": "$$",
+    "priceRange": "INR",
+    "image": "https://shreekunalconsultancy.com/assets/images/hero-diya-altar.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Andheri West",
@@ -43,6 +45,11 @@
       "addressRegion": "Maharashtra",
       "postalCode": "400058",
       "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 19.1197,
+      "longitude": 72.8245
     },
     "areaServed": [
       { "@type": "City", "name": "Mumbai" },
@@ -53,9 +60,17 @@
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
       "opens": "10:00",
       "closes": "20:00"
-    }
+    },
+    "founder": {
+      "@id": "https://shreekunalconsultancy.com/about.html#kunal-dhurve",
+      "@type": "Person",
+      "name": "Kunal Dhurve",
+      "url": "https://shreekunalconsultancy.com/about.html"
+    },
+    "sameAs": []
   }
   </script>
+  <!-- TODO: paste social profile URLs (Instagram, Facebook, etc.) into the empty "sameAs" array above -->
 </head>
 <body>
 
@@ -158,25 +173,25 @@
         <ol class="method">
           <li class="method__step">
             <div class="method__num">01</div>
-            <h4>Intake call</h4>
+            <h3>Intake call</h3>
             <p>A short conversation about the property, your goals and any concerns, so scope is agreed before a visit</p>
             <span class="method__meta">Free, no obligation</span>
           </li>
           <li class="method__step">
             <div class="method__num">02</div>
-            <h4>Site visit</h4>
+            <h3>Site visit</h3>
             <p>On-site assessment with compass readings and measurement of the key zones of the property</p>
             <span class="method__meta">90 min &ndash; 3 hrs on site</span>
           </li>
           <li class="method__step">
             <div class="method__num">03</div>
-            <h4>Written report</h4>
+            <h3>Written report</h3>
             <p>Findings checked against classical principles and written up as a clear, prioritised document</p>
             <span class="method__meta">Delivered within 7 days</span>
           </li>
           <li class="method__step">
             <div class="method__num">04</div>
-            <h4>Implementation support</h4>
+            <h3>Implementation support</h3>
             <p>Follow-up clarification while you act on the report, so nothing gets misapplied</p>
             <span class="method__meta">Included, 7-day window</span>
           </li>
@@ -277,19 +292,19 @@
 
             <div class="limits">
               <div class="limits__item">
-                <h4>Won&rsquo;t predict your future</h4>
+                <h3>Won&rsquo;t predict your future</h3>
                 <p>Vastu is about orientation, layout and energy flow, not fortune-telling</p>
               </div>
               <div class="limits__item">
-                <h4>Won&rsquo;t sell objects</h4>
+                <h3>Won&rsquo;t sell objects</h3>
                 <p>No pyramids, crystals or remedies for sale. Recommendations, not merchandise</p>
               </div>
               <div class="limits__item">
-                <h4>Won&rsquo;t demand demolition first</h4>
+                <h3>Won&rsquo;t demand demolition first</h3>
                 <p>Structural change is suggested only when it meaningfully helps, never as a default</p>
               </div>
               <div class="limits__item">
-                <h4>Won&rsquo;t trade on fear</h4>
+                <h3>Won&rsquo;t trade on fear</h3>
                 <p>If your space already works, that is what the report will say, plainly</p>
               </div>
             </div>
