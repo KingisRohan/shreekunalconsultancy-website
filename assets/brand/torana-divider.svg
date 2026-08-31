@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" fill="none" stroke="currentColor" stroke-width="1.25">
+<defs>
+<g id="u">
+<path d="M18,22 Q32,22 41,15 Q50,8 60,5 Q70,8 79,15 Q88,22 102,22" vector-effect="non-scaling-stroke"/>
+<path d="M0,14 Q3.5,19 0,24 Q-3.5,19 0,14" vector-effect="non-scaling-stroke"/>
+<path d="M0,24 L0,27" vector-effect="non-scaling-stroke"/>
+</g>
+</defs>
+<use href="#u" x="0"/><use href="#u" x="120"/><use href="#u" x="240"/><use href="#u" x="360"/><use href="#u" x="480"/><use href="#u" x="600"/><use href="#u" x="720"/><use href="#u" x="840"/><use href="#u" x="960"/><use href="#u" x="1080"/>
+</svg>
