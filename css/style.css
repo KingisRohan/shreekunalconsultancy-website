@@ -134,7 +134,10 @@ p{margin:0 0 var(--space-2)}
 }
 .site-header__inner{display:flex;align-items:center;justify-content:space-between;padding-block:var(--space-2);gap:var(--space-3)}
 .brand{display:inline-flex;align-items:center;gap:.75rem}
-.brand__mark{width:32px;height:32px;color:var(--gold);flex-shrink:0}
+.brand__mark{width:34px;height:34px;color:var(--gold);flex-shrink:0}
+.brand__mark [stroke],.brand__mark circle,.brand__mark path,.brand__mark polygon,.brand__mark line,.brand__mark rect{
+  stroke-width:9;
+}
 .brand__name{font-family:"Cormorant Garamond","Noto Serif Devanagari",Georgia,serif;font-size:1.14rem;font-weight:600;line-height:1.12;color:var(--tx)}
 .brand__name small{
   display:block;font-family:"Karla",sans-serif;font-size:.58rem;letter-spacing:.18em;
@@ -615,3 +618,47 @@ body.nav-open{overflow:hidden}
 }
 .section--light .form__note{ color:var(--tx-light-2); }
 .section--light .section-head p{ color:var(--tx-light-2); }
+
+/* ==========================================================================
+   Full-bleed altar hero — the Śrī Yantra plaque photograph carries the page.
+   The image's left third is dark and empty by design; the scrim deepens it
+   so type sits on the photograph rather than in a box beside it.
+   ========================================================================== */
+.hero--altar{
+  position:relative;overflow:hidden;isolation:isolate;
+  min-height:clamp(560px,72vh,760px);
+  display:grid;align-items:center;
+  padding-block:clamp(3.5rem,8vw,6rem);
+  background:var(--ink);
+}
+.hero--altar .hero__photo{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:78% center;z-index:-2;
+}
+.hero--altar .hero__bg{
+  position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:
+    linear-gradient(100deg, var(--ink) 0%, rgba(20,16,14,.96) 34%, rgba(20,16,14,.86) 50%, rgba(20,16,14,.42) 66%, rgba(20,16,14,.05) 82%, transparent 90%),
+    linear-gradient(to top, rgba(20,16,14,.72), transparent 42%);
+}
+.hero--altar .wrap{position:relative;z-index:1}
+.hero--altar .hero__copy{max-width:34rem}
+.hero--altar .hero__caption{
+  margin:var(--space-4) 0 0;font-family:"Karla",sans-serif;font-size:.72rem;
+  letter-spacing:.04em;color:var(--tx-faint);max-width:30rem;
+}
+/* the ambient lamp pulse, aimed at the diyas in the photograph */
+.hero--altar::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(26% 30% at 62% 58%, rgba(240,180,80,.16), transparent 70%);
+  animation:lamp 7.5s var(--ease) infinite;
+}
+@media (max-width:980px){
+  .hero--altar{min-height:auto;padding-block:clamp(3rem,9vw,4.5rem)}
+  .hero--altar .hero__photo{object-position:72% center;opacity:.55}
+  .hero--altar .hero__bg{
+    background:linear-gradient(180deg, rgba(20,16,14,.90) 0%, rgba(20,16,14,.80) 55%, rgba(20,16,14,.94) 100%);
+  }
+  .hero--altar .hero__copy{max-width:none}
+  .hero--altar .hero__caption{max-width:none}
+}

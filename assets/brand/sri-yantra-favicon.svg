@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+<g id="triangles">
+  <polygon points="500.00,523.11 366.22,286.60 633.78,286.60" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polygon points="500.00,673.33 336.58,355.86 663.42,355.86" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polygon points="500.00,760.00 256.99,407.56 743.01,407.56" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polygon points="500.00,624.16 412.84,447.89 587.16,447.89" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polygon points="500.00,552.00 445.82,473.05 554.18,473.05" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polygon points="500.00,355.86 422.67,523.11 577.33,523.11" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polygon points="500.00,240.00 245.25,552.00 754.75,552.00" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polygon points="500.00,286.60 317.59,624.16 682.41,624.16" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polygon points="500.00,407.56 385.08,673.33 614.92,673.33" fill="none" stroke="currentColor" stroke-width="2"/>
+</g>
+<g id="bindu">
+  <circle cx="500.00" cy="500.00" r="6" fill="currentColor" stroke="none"/>
+</g>
+</svg>
